@@ -12,7 +12,7 @@
 	        flotpie: ['jquery','flot'],
 	        flotresize: ['jquery','flot'],
 	        aceExtra: ['jquery'],
-	        aceElements: ['aceElements'],
+	        aceElements: ['aceExtra'],
 	        ace: ['aceElements']
 	    },
 	    paths:{		    	
