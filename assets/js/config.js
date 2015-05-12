@@ -11,7 +11,9 @@
 	        flot: ['jquery'],
 	        flotpie: ['jquery','flot'],
 	        flotresize: ['jquery','flot'],
-	        ace: ['aceExtra','aceElements']
+	        aceExtra: ['jquery'],
+	        aceElements: ['aceElements'],
+	        ace: ['aceElements']
 	    },
 	    paths:{		    	
 	        jquery:'jquery.2.1.1.min',
