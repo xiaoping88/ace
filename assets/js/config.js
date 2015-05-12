@@ -13,7 +13,8 @@
 	        flotresize: ['jquery','flot'],
 	        aceExtra: ['jquery'],
 	        aceElements: ['aceExtra'],
-	        ace: ['aceElements']
+	        ace: ['aceElements'],
+	        respond: ['html5shiv']
 	    },
 	    paths:{		    	
 	        jquery:'jquery.2.1.1.min',
@@ -43,7 +44,7 @@
 
 		if (mainVer <= 8){
 			options.paths.jquery = 'jquery.1.11.1.min';
-			jqueryDeps = ['excanvas','html5shiv','respond'];
+			jqueryDeps = ['excanvas','respond'];
 		}
 
 		if('ontouchstart' in document.documentElement) {
