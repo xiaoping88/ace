@@ -14,7 +14,24 @@
 	        aceExtra: ['jquery'],
 	        aceElements: ['aceExtra'],
 	        ace: ['aceElements'],
-	        respond: ['html5shiv']
+	        respond: ['html5shiv'],
+	        gritter: ['jquery'],
+	        chosen: ['jquery'],
+	        bootstrapdatepicker: ['bootstrap'],
+	        bootstraptimepicker: ['bootstrap'],
+	        bootstrapdatetimepicker: ['bootstrap'],
+	        bootstrapcolorpicker: ['bootstrap'],
+	       	bootstraptag: ['bootstrap'],
+	      	knob: ['jquery'],
+	        autosize: ['jquery'],
+	        inputlimiter: ['jquery'],
+	        maskedinput: ['jquery'],
+	       	duallistbox: ['jquery'],
+	        raty: ['jquery'],
+	        multiselect: ['bootstrap'],
+	        select2: ['jquery'],
+	        typeahead: ['jquery']
+
 	    },
 	    paths:{		    	
 	        jquery:'jquery.2.1.1.min',
@@ -32,7 +49,33 @@
 	        sparkline: 'jquery.sparkline.min',
 	        flot: 'jquery.flot.min',
 	        flotpie: 'jquery.flot.pie.min',
-	        flotresize: 'jquery.flot.resize.min'
+	        flotresize: 'jquery.flot.resize.min',
+	        moment: 'moment.min',
+	        fullcalendar: 'fullcalendar.min',
+	        bootbox: 'bootbox.min',
+	        gritter: 'jquery.gritter.min',
+	        spin: 'spin.min',
+	        chosen: 'chosen.jquery.min',
+	        fueluxspinner: 'fuelux.spinner.min',
+	        bootstrapdatepicker: 'bootstrap-datepicker.min',
+	        bootstraptimepicker: 'bootstrap-timepicker.min',
+	        bootstrapdatetimepicker: 'bootstrap-datetimepicker.min',
+	        daterangepicker: 'daterangepicker.min',
+	        bootstrapcolorpicker: 'bootstrap-colorpicker.min',
+	        knob: 'jquery.knob.min',
+	        autosize: 'jquery.autosize.min',
+	        inputlimiter: 'jquery.inputlimiter.1.3.1.min',
+	        maskedinput: 'jquery.maskedinput.min',
+	        bootstraptag: 'bootstrap-tag.min',
+	        duallistbox: 'jquery.bootstrap-duallistbox.min',
+	        raty: 'jquery.raty.min',
+	        multiselect: 'bootstrap-multiselect.min',
+	        select2: 'select2.min',
+	        typeahead: 'typeahead.jquery.min',
+	        wizard: 'fuelux.wizard.min',
+	        jqvalidate: 'jquery.validate.min',
+	        additionalmethods: 'additional-methods.min'
+
 
 	    }
 	};

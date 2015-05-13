@@ -4,5 +4,9 @@ define('main',['jquery','bootstrap','ace'], function ($) {
 
     };
 
+    G.init = function(){
+
+    };
+
     return G;
 });
