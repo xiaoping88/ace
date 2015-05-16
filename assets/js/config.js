@@ -33,8 +33,19 @@
 	        typeahead: ['jquery'],
 	        colorbox: ['jquery'],
 	        hotkeys: ['jquery'],
-	        wysiwyg: ['bootstrap']
-
+	        wysiwyg: ['bootstrap'],
+	        jqGrid: ['jquery'],
+	        gridloc: ['jqGrid'],
+	        jqueryui: ['jquery'],
+	        nestable: ['jquery'],
+	        bootstrapeditable: ['bootstrap'],
+	        aceeditable: ['bootstrapeditable'],
+	       	datatables: ['jquery'],
+	        jqDataTablesbootstrap: ['datatables'],
+	        jqTableTools: ['datatables'],
+	        jqTableColVis: ['datatables'],
+	        fueluxtree: ['jquery'],
+	        btmarkdown: ['markdown']
 	    },
 	    paths:{		    	
 	        jquery:'jquery.2.1.1.min',
@@ -80,9 +91,21 @@
 	        additionalmethods: 'additional-methods.min',
 	        colorbox: 'jquery.colorbox.min',
 	        hotkeys: 'jquery.hotkeys.min',
-	        wysiwyg: 'bootstrap-wysiwyg.min'
-
-
+	        wysiwyg: 'bootstrap-wysiwyg.min',
+	        jqGrid: 'jquery.jqGrid.min',
+	        gridloc: 'grid.locale-en',
+	        jqueryui: 'jquery-ui.min',
+	        nestable: 'jquery.nestable.min',
+	        bootstrapeditable:'bootstrap-editable.min',
+	        aceeditable: 'ace-editable.min',
+	        datatables: 'jquery.dataTables.min',
+	        jqDataTablesbootstrap: 'jquery.dataTables.bootstrap.min',
+	        jqTableTools: 'dataTables.tableTools.min',
+	        jqTableColVis: 'dataTables.colVis.min',
+	        fueluxtree: 'fuelux.tree.min',
+	        prettify: 'prettify.min',
+	        markdown: 'markdown.min',
+	        btmarkdown: 'bootstrap-markdown.min'
 	    }
 	};
 

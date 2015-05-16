@@ -28,24 +28,10 @@
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
 		<![endif]-->
 
-		<!-- inline styles related to this page -->
-
-
-
-		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
-
-		<!--[if lte IE 8]>
-		<script src="assets/js/html5shiv.min.js"></script>
-		<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
 	</head>
 
 	<body class="no-skin">
 		<div id="navbar" class="navbar navbar-default">
-			<script type="text/javascript">
-				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
-			</script>
-
 			<div class="navbar-container" id="navbar-container">
 				<div class="navbar-header pull-left">
 					<a href="index.html" class="navbar-brand">
@@ -355,16 +341,10 @@
 		</div>
 
 		<div class="main-container" id="main-container">
-			<script type="text/javascript">
-				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
-			</script>
 
 			<a href="#" class="menu-toggler invisible" id="menu-toggler" data-target="#sidebar"></a>
 
 			<div id="sidebar" class="sidebar                          responsive-min">
-				<script type="text/javascript">
-					try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
-				</script>
 
 				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
 					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
@@ -875,18 +855,11 @@
 					<i class="ace-icon fa fa-angle-double-right" data-icon1="ace-icon fa fa-angle-double-right" data-icon2="ace-icon fa fa-angle-double-left"></i>
 				</div>
 
-				<script type="text/javascript">
-					try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
-				</script>
 			</div>
 
 			<div class="main-content">
 				<div class="main-content-inner">
 					<div class="breadcrumbs" id="breadcrumbs">
-						<script type="text/javascript">
-							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-						</script>
-
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
@@ -1046,42 +1019,12 @@
 			</a>
 		</div><!-- /.main-container -->
 
-		<!-- basic scripts -->
-
-		<!--[if !IE]> -->
-		<script src="assets/js/jquery.2.1.1.min.js"></script>
-
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script src="assets/js/jquery.1.11.1.min.js"></script>
-<![endif]-->
-
-		<!--[if !IE]> -->
+		<script data-main="assets/js/config" src="assets/js/require.js"></script>
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='assets/js/jquery.min.js'>"+"<"+"/script>");
+			require(['main'],function(p){
+				p.init();
+			});
 		</script>
-
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script type="text/javascript">
- window.jQuery || document.write("<script src='assets/js/jquery1x.min.js'>"+"<"+"/script>");
-</script>
-<![endif]-->
-		<script type="text/javascript">
-			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
-		</script>
-		<script src="assets/js/bootstrap.min.js"></script>
-
-		<!-- page specific plugin scripts -->
-
-		<!-- ace scripts -->
-		<!-- ace settings handler -->
-		<script src="assets/js/ace-extra.min.js"></script>        
-		<script src="assets/js/ace-elements.min.js"></script>
-		<script src="assets/js/ace.min.js"></script>
-
-		<!-- inline scripts related to this page -->
+		
 	</body>
 </html>

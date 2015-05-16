@@ -31,22 +31,10 @@
 
 		<!-- inline styles related to this page -->
 
-
-
-		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
-
-		<!--[if lte IE 8]>
-		<script src="assets/js/html5shiv.min.js"></script>
-		<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
 	</head>
 
 	<body class="no-skin">
 		<div id="navbar" class="navbar navbar-default">
-			<script type="text/javascript">
-				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
-			</script>
-
 			<div class="navbar-container" id="navbar-container">
 				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
 					<span class="sr-only">Toggle sidebar</span>
@@ -366,15 +354,8 @@
 		</div>
 
 		<div class="main-container" id="main-container">
-			<script type="text/javascript">
-				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
-			</script>
 
 			<div id="sidebar" class="sidebar                  responsive">
-				<script type="text/javascript">
-					try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
-				</script>
-
 				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
 					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
 						<button class="btn btn-success">
@@ -880,18 +861,11 @@
 					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
 				</div>
 
-				<script type="text/javascript">
-					try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
-				</script>
 			</div>
 
 			<div class="main-content">
 				<div class="main-content-inner">
 					<div class="breadcrumbs" id="breadcrumbs">
-						<script type="text/javascript">
-							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-						</script>
-
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
@@ -1756,146 +1730,12 @@
 			</a>
 		</div><!-- /.main-container -->
 
-		<!-- basic scripts -->
-
-		<!--[if !IE]> -->
-		<script src="assets/js/jquery.2.1.1.min.js"></script>
-
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script src="assets/js/jquery.1.11.1.min.js"></script>
-<![endif]-->
-
-		<!--[if !IE]> -->
+		<script data-main="assets/js/config" src="assets/js/require.js"></script>
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='assets/js/jquery.min.js'>"+"<"+"/script>");
-		</script>
-
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script type="text/javascript">
- window.jQuery || document.write("<script src='assets/js/jquery1x.min.js'>"+"<"+"/script>");
-</script>
-<![endif]-->
-		<script type="text/javascript">
-			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
-		</script>
-		<script src="assets/js/bootstrap.min.js"></script>
-
-		<!-- page specific plugin scripts -->
-		<script src="assets/js/jquery-ui.custom.min.js"></script>
-		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-
-		<!-- ace scripts -->
-		<!-- ace settings handler -->
-		<script src="assets/js/ace-extra.min.js"></script>        
-		<script src="assets/js/ace-elements.min.js"></script>
-		<script src="assets/js/ace.min.js"></script>
-
-		<!-- inline scripts related to this page -->
-		<script type="text/javascript">
-			jQuery(function($) {
-			
-				$('#simple-colorpicker-1').ace_colorpicker({pull_right:true}).on('change', function(){
-					var color_class = $(this).find('option:selected').data('class');
-					var new_class = 'widget-box';
-					if(color_class != 'default')  new_class += ' widget-color-'+color_class;
-					$(this).closest('.widget-box').attr('class', new_class);
-				});
-			
-			
-				// scrollables
-				$('.scrollable').each(function () {
-					var $this = $(this);
-					$(this).ace_scroll({
-						size: $this.attr('data-size') || 100,
-						//styleClass: 'scroll-left scroll-margin scroll-thin scroll-dark scroll-light no-track scroll-visible'
-					});
-				});
-				$('.scrollable-horizontal').each(function () {
-					var $this = $(this);
-					$(this).ace_scroll(
-					  {
-						horizontal: true,
-						styleClass: 'scroll-top',//show the scrollbars on top(default is bottom)
-						size: $this.attr('data-size') || 500,
-						mouseWheelLock: true
-					  }
-					).css({'padding-top': 12});
-				});
-				
-				$(window).on('resize.scroll_reset', function() {
-					$('.scrollable-horizontal').ace_scroll('reset');
-				});
-			
-				
-				$('#id-checkbox-vertical').prop('checked', false).on('click', function() {
-					$('#widget-toolbox-1').toggleClass('toolbox-vertical')
-					.find('.btn-group').toggleClass('btn-group-vertical')
-					.filter(':first').toggleClass('hidden')
-					.parent().toggleClass('btn-toolbar')
-				});
-			
-				/**
-				//or use slimScroll plugin
-				$('.slim-scrollable').each(function () {
-					var $this = $(this);
-					$this.slimScroll({
-						height: $this.data('height') || 100,
-						railVisible:true
-					});
-				});
-				*/
-				
-			
-				/**$('.widget-box').on('setting.ace.widget' , function(e) {
-					e.preventDefault();
-				});*/
-			
-				/**
-				$('.widget-box').on('show.ace.widget', function(e) {
-					//e.preventDefault();
-					//this = the widget-box
-				});
-				$('.widget-box').on('reload.ace.widget', function(e) {
-					//this = the widget-box
-				});
-				*/
-			
-				//$('#my-widget-box').widget_box('hide');
-			
-				
-			
-				// widget boxes
-				// widget box drag & drop example
-			    $('.widget-container-col').sortable({
-			        connectWith: '.widget-container-col',
-					items:'> .widget-box',
-					handle: ace.vars['touch'] ? '.widget-header' : false,
-					cancel: '.fullscreen',
-					opacity:0.8,
-					revert:true,
-					forceHelperSize:true,
-					placeholder: 'widget-placeholder',
-					forcePlaceholderSize:true,
-					tolerance:'pointer',
-					start: function(event, ui) {
-						//when an element is moved, it's parent becomes empty with almost zero height.
-						//we set a min-height for it to be large enough so that later we can easily drop elements back onto it
-						ui.item.parent().css({'min-height':ui.item.height()})
-						//ui.sender.css({'min-height':ui.item.height() , 'background-color' : '#F5F5F5'})
-					},
-					update: function(event, ui) {
-						ui.item.parent({'min-height':''})
-						//p.style.removeProperty('background-color');
-					}
-			    });
-				
-			
-			
+			require(['widgets'],function(p){
+				p.init();
 			});
 		</script>
+
 	</body>
 </html>
