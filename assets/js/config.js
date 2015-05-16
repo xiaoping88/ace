@@ -30,7 +30,10 @@
 	        raty: ['jquery'],
 	        multiselect: ['bootstrap'],
 	        select2: ['jquery'],
-	        typeahead: ['jquery']
+	        typeahead: ['jquery'],
+	        colorbox: ['jquery'],
+	        hotkeys: ['jquery'],
+	        wysiwyg: ['bootstrap']
 
 	    },
 	    paths:{		    	
@@ -74,7 +77,10 @@
 	        typeahead: 'typeahead.jquery.min',
 	        wizard: 'fuelux.wizard.min',
 	        jqvalidate: 'jquery.validate.min',
-	        additionalmethods: 'additional-methods.min'
+	        additionalmethods: 'additional-methods.min',
+	        colorbox: 'jquery.colorbox.min',
+	        hotkeys: 'jquery.hotkeys.min',
+	        wysiwyg: 'bootstrap-wysiwyg.min'
 
 
 	    }
